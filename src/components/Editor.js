@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { CompactPicker } from 'react-color'
 
 const Editor = () => {
     const [panelWidth, setPanelWidth] = useState(20)
@@ -6,7 +7,7 @@ const Editor = () => {
     const [hideOptions, setHideOptions] = useState(false)
     const [hideDrawingPanel, setHideDrawingPanel] = useState(true)
     const [buttonText, setButtonText] = useState("Start Drawing")
-    const [selectedColor, setSelectedColor] = useState("#00000")
+    const [selectedColor, setSelectedColor] = useState("#22194D")
 
     const initializeDrawingPanel = () => {
         setHideOptions(!hideOptions)
@@ -20,7 +21,8 @@ const Editor = () => {
     return (
         <div id="editor">
            <h1>Pixel Editor</h1>
-           <h2>Enter Panel Dimensions</h2>
+           {hideDrawingPanel && <h2>Enter Panel Dimensions</h2> }
+           {hideDrawingPanel && (
            <div id="options">
            <span>Width</span>
                <div className="option">
@@ -37,7 +39,12 @@ const Editor = () => {
                    />
                 </div>
            </div>
-           <button className="button">{buttonText}</button>
+            )}
+           <button onClick={initializeDrawingPanel} className="button">{buttonText}</button>
+
+            <br />
+           <CompactPicker color={selectedColor} />
+            
         </div>
     )
 }
