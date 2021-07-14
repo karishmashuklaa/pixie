@@ -1,11 +1,12 @@
-import '../App.css'
+import '../styles/App.scss'
+import Editor from './Editor'
 
 const App = () => {
   return (
-    <div className="app">
-      hello react
-    </div>
-  );
+    <>
+    <Editor />
+    </>
+  )
 }
 
 export default App
