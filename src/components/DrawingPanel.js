@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import '../styles/drawingPanel.scss'
 import Row from './Row'
+import { exportComponentAsPNG } from "react-component-export-image"
 
 const DrawingPanel = ({ width, height, selectedColor }) => {
 
+  const panelRef = useRef()
   let rows = []
 
   for (let i = 0; i < height; i++) {
@@ -17,9 +19,12 @@ const DrawingPanel = ({ width, height, selectedColor }) => {
 
   return (
     <div id="drawingPanel">
-      <div id="pixels">
+      <div id="pixels" ref={panelRef}>
         {rows}
       </div>
+      <button onClick={() => exportComponentAsPNG(panelRef)} className="button">
+        Export as PNG
+      </button>
     </div>
   );
 }
