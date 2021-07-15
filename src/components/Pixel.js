@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/pixel.scss'
 
 const Pixel = ({ selectedColor }) => {
 
@@ -32,7 +33,6 @@ const Pixel = ({ selectedColor }) => {
         onMouseEnter={changeColorOnHover}
         onMouseLeave={resetColor}
         >
-            hi
         </div>
     )
 }

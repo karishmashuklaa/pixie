@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/editor.scss'
 import { CompactPicker } from 'react-color'
 import DrawingPanel from './DrawingPanel'
 

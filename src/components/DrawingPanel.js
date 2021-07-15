@@ -1,5 +1,6 @@
-import React from "react"
-import Row from "./Row"
+import React from 'react'
+import '../styles/drawingPanel.scss'
+import Row from './Row'
 
 const DrawingPanel = ({ width, height, selectedColor }) => {
 

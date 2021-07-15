@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/row.scss'
 import Pixel from './Pixel'
 
 const Row = ({ width, selectedColor }) => {
