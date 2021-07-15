@@ -1,20 +1,21 @@
 @import "properties.scss";
 
 #editor {
-  border: 1px solid $red;
-  border-radius: 0.25rem;
-  padding: 1rem 4rem 2rem 4rem;
-  margin-top: 2rem;
+  border: 1px solid $green;
+  border-radius: 1rem;
+  padding: 1rem 5rem 1rem 5rem;
+  margin-top: 4rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1 {
-    margin-bottom: 1.5rem;
+  h2 {
+    margin-bottom: 3rem;
+    font-size: 30px;
   }
 
-  h2 {
+  span {
     margin-bottom: 1rem;
   }
 
@@ -29,31 +30,30 @@
     }
 
     .panelInput {
-      height: 5rem;
-      width: 5rem;
-      font-size: 2rem;
+      height: 6rem;
+      width: 6rem;
+      font-size: 3rem;
       text-align: center;
       background-color: $black;
       color: $white;
-      border: 1px solid $grey;
-      border-radius: 0.25rem;
+      border: 1px solid $green;
+      border-radius: 1rem;
       margin: 0 1rem 0.5rem 1rem;
       padding-left: 1rem;
 
       &:focus {
         outline: none !important;
-        border-color: $red;
-        box-shadow: 0 0 0.5rem $grey;
+        border-color: $yellow;
       }
     }
   }
 
   .button {
-    font-size: 1.25rem;
-    background-color: $red;
+    font-size: 1rem;
+    background-color: $green;
     color: $white;
-    padding: 1rem 3rem;
-    border-radius: 0.25rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
     text-transform: uppercase;
     border: 1px solid transparent;
     transition: background-color 0.2s ease-in-out;
@@ -62,11 +62,8 @@
     &:hover {
       cursor: pointer;
       background-color: transparent;
-      border-color: $red;
+      border-color: $green;
     }
   }
 
-  .circle-picker {
-    margin-bottom: 1.5rem !important;
-  }
 }
