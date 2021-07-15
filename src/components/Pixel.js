@@ -32,7 +32,7 @@ const Pixel = ({ selectedColor }) => {
         onMouseEnter={changeColorOnHover}
         onMouseLeave={resetColor}
         >
-           Pixels
+            hi
         </div>
     )
 }

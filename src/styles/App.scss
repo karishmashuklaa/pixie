@@ -1,15 +1,19 @@
-body , 
+@import "properties.scss";
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+body,
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-width: fit-content;
-    background-color: black;
-    color: #f0f8ff;
+  background: $black;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  min-width: fit-content;
 }
