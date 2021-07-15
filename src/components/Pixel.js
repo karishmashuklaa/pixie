@@ -4,7 +4,7 @@ import '../styles/pixel.scss'
 const Pixel = ({ selectedColor }) => {
 
     // background color of the pixel
-    const [pixelColor, setPixelColor] = useState("#f0f8ff")
+    const [pixelColor, setPixelColor] = useState("#ffffff")
     const [oldColor, setOldColor] = useState(pixelColor)
     const [canChangeColor, setCanChangeColor] = useState(true)
 
