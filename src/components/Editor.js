@@ -18,6 +18,10 @@ const Editor = () => {
             : setButtonText("Start Drawing") 
     }
 
+    const changeColor = (color) => {
+        setSelectedColor(color.hex)
+    }
+
     return (
         <div id="editor">
            <h1>Pixel Editor</h1>
@@ -43,7 +47,7 @@ const Editor = () => {
            <button onClick={initializeDrawingPanel} className="button">{buttonText}</button>
 
             <br />
-           <CompactPicker color={selectedColor} />
+            {hideOptions && <CompactPicker color={selectedColor} onChangeComplete={changeColor} /> }
             
         </div>
     )
