@@ -26,24 +26,30 @@ const Editor = () => {
 
     return (
         <div id="editor">
-           {hideDrawingPanel && <h2>Enter Art Panel Dimensions</h2> }
+           {hideDrawingPanel && <h2>Choose Panel Dimensions</h2> }
            {hideDrawingPanel ? (
            <div id="options">
                <div className="option">
-                   <input type="number" className="panelInput" 
+               <span>Width</span>
+                   <input 
+                   type="number"
+                   min="0" 
+                   className="panelInput" 
                    defaultValue={panelWidth}
                    onChange={(e) => setPanelWidth(e.target.value)}
-                   />
+                   /> 
                </div>
-               <span>Width</span>
-               
+               X
                <div className="option">
-                   <input type="number" className="panelInput" 
+               <span>Height</span>
+                   <input 
+                   type="number"
+                   min="0" 
+                   className="panelInput" 
                    defaultValue={panelHeight}
                    onChange={(e) => setPanelHeight(e.target.value)}
                    />
                 </div>
-                <span>Height</span>
            </div>
             ) : (
                 <CompactPicker 

@@ -1,10 +1,11 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import '../styles/drawingPanel.scss'
 import Row from './Row'
 import { exportComponentAsPNG } from "react-component-export-image"
 
 const DrawingPanel = ({ width, height, selectedColor }) => {
-
+  const [undo, setUndo] = useState(false)
+  const [redo, setRedo] = useState(false)
   const panelRef = useRef()
   let rows = []
 
