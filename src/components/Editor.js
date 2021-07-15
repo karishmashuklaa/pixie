@@ -54,7 +54,8 @@ const Editor = () => {
             ) : (
                 <CompactPicker 
                 color={selectedColor} 
-                onChangeComplete={changeColor} />
+                onChangeComplete={changeColor}
+                />
             )}
             <br />
             {hideOptions && (
