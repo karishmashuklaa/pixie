@@ -7,7 +7,7 @@ const DrawingPanel = ({width,height,color}) => {
 
     for(let i=0; i<height; i++) {
         rows.push(
-        <Row key={i} width={width} color={selectedColor}/>
+        <Row key={i} width={width} color={color}/>
         )
     }
     return (
