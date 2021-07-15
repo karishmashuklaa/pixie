@@ -1,3 +1,4 @@
+@import "properties.scss";
 #drawingPanel {
     display: flex;
     flex-direction: column;
@@ -7,3 +8,22 @@
 #pixels {
     margin-bottom: 2rem;
   }
+
+#buttons {
+  margin-bottom: 2rem;
+  
+  button {
+    display: inline-block;
+  }
+
+  .export-btn {
+    float:left;
+    margin-right: 1rem;
+  }
+
+  .redo-btn {
+    float: right;
+    margin-left: 1rem;
+  }
+}
+

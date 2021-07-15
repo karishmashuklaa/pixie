@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react'
 import '../styles/drawingPanel.scss'
 import Row from './Row'
 import { exportComponentAsPNG } from "react-component-export-image"
+import { FiDownload } from 'react-icons/fi'
+import { ImUndo, ImRedo } from 'react-icons/im'
 
 const DrawingPanel = ({ width, height, selectedColor }) => {
   const [undo, setUndo] = useState(false)
@@ -23,9 +25,20 @@ const DrawingPanel = ({ width, height, selectedColor }) => {
       <div id="pixels" ref={panelRef}>
         {rows}
       </div>
-      <button onClick={() => exportComponentAsPNG(panelRef)} className="button">
-        Export as PNG
+
+      <div id="buttons">
+      <button 
+      onClick={() => exportComponentAsPNG(panelRef)} className="button export-btn"
+      >
+        <FiDownload size={20} />
       </button>
+      <button className="button undo-btn">
+        <ImUndo size={20} />
+      </button>
+      <button className=" button redo-btn">
+        <ImRedo size={20} />
+      </button>
+      </div>
     </div>
   );
 }

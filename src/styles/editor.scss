@@ -1,9 +1,9 @@
 @import "properties.scss";
 
 #editor {
-  // border: 1px solid $green;
-  // border-radius: 1rem;
-  // padding: 1rem 4rem 2rem 4rem;
+  border: 1px solid $green;
+  border-radius: 1rem;
+  padding: 1rem 5rem 1rem 5rem;
   margin-top: 4rem;
 
   display: flex;
@@ -52,7 +52,7 @@
     font-size: 1rem;
     background-color: $green;
     color: $white;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
     text-transform: uppercase;
     border: 1px solid transparent;
