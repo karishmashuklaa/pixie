@@ -33,7 +33,7 @@ const Editor = () => {
                <span>Width</span>
                    <input 
                    type="number"
-                   min="0" 
+                   min="1" 
                    className="panelInput" 
                    defaultValue={panelWidth}
                    onChange={(e) => setPanelWidth(e.target.value)}
@@ -44,7 +44,7 @@ const Editor = () => {
                <span>Height</span>
                    <input 
                    type="number"
-                   min="0" 
+                   min="1" 
                    className="panelInput" 
                    defaultValue={panelHeight}
                    onChange={(e) => setPanelHeight(e.target.value)}
