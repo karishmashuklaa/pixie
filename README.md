@@ -3,6 +3,10 @@ Pixie is a simple pixel art drawing web application. It lets you:
 * Use random colors to color the pixels
 * Export your finished art as a PNG sprite!
 
+Tech Stack
+* React
+* Sass
+
 ## Output 
 
 This is one of the sprites I created ( I am not that good at pixel art xD )
